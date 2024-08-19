@@ -77,6 +77,7 @@ export default function App() {
           <Tecnologias/>
           </div>
             </ul>
+
     
      </div>
           </div>
