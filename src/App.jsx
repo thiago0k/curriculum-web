@@ -3,7 +3,7 @@ import './index.css';
 import './App.scss';
 import { useState,useEffect} from 'react';
 
-export default  function App() {
+export default function App() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [click, setClick] = useState(false);
 
@@ -73,17 +73,23 @@ export default  function App() {
          <a href="#"><svg style={{ color: click ? '#322e52' : 'white' }} className="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
         </div>
         <div>
-        <h1 style={{ color: click ? 'black' : 'gainsboro' }}  className='mt-7'>Tecnologias</h1>
+        <h1 style={{ color: click ? 'black' : 'gainsboro' }}  className=''>Tecnologias</h1>
           <Tecnologias/>
           </div>
             </ul>
     
      </div>
           </div>
-          <div style={{ background: click ? 'white' : '#1e293b' }} id='seccion1' className='w-full min-h-screen bg-slate-800'>hola</div> 
+          <div style={{ background: click ? 'white' : '#1e293b' }} id='seccion1' className='w-full min-h-screen'>
+           <div className=''>
+           <Proyectos cambio={{ color: click ? 'black' : 'gainsboro' }}/>
+           <Proyectos cambio={{ color: click ? 'black' : 'gainsboro' }}/>
+            </div> 
+
+
+            </div> 
            <div  style={{ background: click ? 'white' : '#19192d' }}  className=' w-full min-h-screen flex flex-col gap-14  m-auto' id='seccion1'>
             <div>
-          <h1 className='mt-14 ml-3' style={{ color: click ? 'black' : 'gainsboro' }}><svg className="size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg> Proyectos</h1>
           </div>
              </div>  
           
@@ -220,7 +226,7 @@ function Proyectos( {cambio} ) {
   return(
     <>
     
-    <div className='mb-4 flex flex-col justify-center m-auto gap-5 w-[95%]'>
+    <div className='mb-4 flex  flex-col justify-center m-auto gap-5 w-[95%]'>
     <div>
     <div className='bg-slate-500 w-[99%]  h-56 rounded-xl'><img className='w-[100%] h-[100%] rounded-lg' src="https://www.porfolio.dev/projects/svgl.webp" alt="" /></div>
     </div>
