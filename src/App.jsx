@@ -62,7 +62,7 @@ export default function App() {
            <ul className="contenedor-interior-presentacion">
         <div className="parte-1"> 
             <img className="image-logo" src="src/iconos/thiago.jpg" alt="logo" />
-            <button className="btn-disponible">Disponible para trabajar</button>
+            <button className="btn-disponible">Disponibles para trabajar</button>
         </div>
         <li className="item-presentacion uno"><h1  style={{ color: click ? 'black' : 'white' }}>Hola! Soy Thiago,</h1></li>
         <li style={{ color: click ? 'black' : 'white' }} className="item-presentacion"><h3  style={{ color: click ? 'black' : 'white' }}>Apasionado por la tecnología.</h3><strong><br></br>Aprendo y supero nuevos retos<br /> semanalmente y analizo</strong> cómo mejoran mis habilidades a través de ellos.</li>
